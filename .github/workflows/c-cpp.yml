@@ -16,8 +16,10 @@ jobs:
     - name: apt-get 
       run: sudo apt-get update 
     - name: gcc
-      run: sudo apt install build-essential
-      run: gcc --version 
+      run: |
+        sudo apt install build-essential &&
+        gcc --version 
     - name: build hello 
-      run: gcc -o hello.o hello.c 
-      run: ./hello.o
+      run: |
+        gcc -o hello.o hello.c  && 
+        ./hello.o
