@@ -33,3 +33,12 @@ jobs:
         gcc -o fahrenheit.o fahrenheit.c &&
         ./fahrenheit.o
 
+    - name: exercise_1-3 
+      run: | 
+        gcc -o Exercise-1.3.o Exercise-1.3.c &&
+        ./Exercise-1.3.o
+
+    - name: exercise_1-4 
+      run: | 
+        gcc -o Exercise-1.4.o Exercise-1.4.c &&
+        ./Exercise-1.4.o
