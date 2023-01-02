@@ -2,7 +2,7 @@
 
 /* print Fahrenheit to Celsius table */
 
-int main() 
+main() 
 {
    int fahr; 
 
