@@ -42,3 +42,8 @@ jobs:
       run: | 
         gcc -o Exercise-1.4.o Exercise-1.4.c &&
         ./Exercise-1.4.o
+
+    - name: fahrenheit_for_loop 
+      run: | 
+        gcc -o fahrenheit_for_loop.o fahrenheit_for_loop.c &&
+        ./fahrenheit_for_loop.o
