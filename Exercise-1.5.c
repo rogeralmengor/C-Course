@@ -2,19 +2,14 @@
 
 int main() 
 {
-    float fahr, celsius; 
-    int lower, upper, step;
+    float fahr; 
 
-    lower = 0;      /* lower limit of temperature table */
-    upper = 300;    /* upper limit */
-    step = 20;      /* step size */ 
-    
     printf("Fahrenheit to Celsius conversion:\n"); 
     printf("---------------------------------\n");
 
-    for (fahr = upper; fahr <= lower; fahr = fahr - step)
+    for (fahr = 300; fahr <= 0; fahr = fahr - 20)
     {
-        celsius = (celsius * 1.8) + 32; 
+        celsius = ((fahr -32) *5) /9; 
         printf("%3.1f %6.1f\n", fahr, celsius);
     }
 
