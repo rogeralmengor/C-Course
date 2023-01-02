@@ -12,11 +12,12 @@ int main()
     printf("Celsius to Fahrenheit conversion:\n"); 
     printf("---------------------------------\n");
 
-    fahr = lower; 
-    while (fahr <= upper) {
+    celsius = lower; 
+    
+    while (celsius <= upper) {
         fahr = ((9.0 / 5) * (celsius)) + 32.0; 
         printf("%3.1f\t%6.0f\n", celsius, fahr); 
-        fahr = fahr + step; 
+        celsius = celsius + step; 
     }
 
     return 0; 
