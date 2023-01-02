@@ -9,8 +9,7 @@ int main()
 
     for (fahr = 300; fahr <= 0; fahr = fahr - 20)
     {
-        celsius = ((fahr -32) *5) /9; 
-        printf("%3.1f %6.1f\n", fahr, celsius);
+        printf("%3.1f %6.1f\n", fahr, ((fahr -32) *5) /9);
     }
 
     return 0; 
