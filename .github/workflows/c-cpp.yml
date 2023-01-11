@@ -52,3 +52,8 @@ jobs:
       run: | 
         gcc -o Exercise-1.5.o Exercise-1.5.c &&
         ./Exercise-1.5.o
+
+    - name: symbolic_contants 
+      run: |
+        ggc -o symbolic_constants.o symbolic_constants.c &&
+        ./symbolic_constants.o
