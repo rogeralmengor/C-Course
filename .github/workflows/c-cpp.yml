@@ -55,5 +55,5 @@ jobs:
 
     - name: symbolic_contants 
       run: |
-        ggc -o symbolic_constants.o symbolic_constants.c &&
+        gcc -o symbolic_constants.o symbolic_constants.c &&
         ./symbolic_constants.o
